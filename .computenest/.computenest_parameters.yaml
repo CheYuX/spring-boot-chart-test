@@ -9,7 +9,7 @@ RuntimeType: Kubernetes
 ServiceType: private
 ArtifactSourceType: HelmChart
 ServiceBuildRegion: ap-southeast-1
-RepoName: yehanyh/spring-boot-chart
+RepoName: CheYuX/spring-boot-chart-test
 RegionId: cn-hangzhou
 CustomParameters:
 - NoEcho: false
@@ -20,6 +20,6 @@ CustomParameters:
   Default: '1'
   Name: ReplicaCount
 OutputType: HelmNotes
-Owner: yehanyh
+Owner: CheYuX
 Branch: main
 Platform: github

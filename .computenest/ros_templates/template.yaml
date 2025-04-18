@@ -489,7 +489,7 @@ Resources:
         Fn::GetAtt:
           - AckOrAcsClusterModule
           - ClusterId
-      HelmChartUrl: '{{ computenest::helmchart::spring-boot-chart }}'
+      HelmChartUrl: '{{ computenest::helmchart::spring-boot-chart-test }}'
       ChartValues:
         replicaCount:
           Ref: ReplicaCount
@@ -531,13 +531,13 @@ Outputs:
                   - 0:-1
                   - Fn::Split:
                       - ':'
-                      - '{{ computenest::helmchart::spring-boot-chart }}'
+                      - '{{ computenest::helmchart::spring-boot-chart-test }}'
           HelmTag:
             Fn::Select:
               - -1
               - Fn::Split:
                   - ':'
-                  - '{{ computenest::helmchart::spring-boot-chart }}'
+                  - '{{ computenest::helmchart::spring-boot-chart-test }}'
 Metadata:
   ALIYUN::ROS::Interface:
     ParameterGroups:
