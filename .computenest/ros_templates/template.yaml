@@ -500,18 +500,6 @@ Resources:
         Ref: 'ALIYUN::StackName'
       ReleaseName: spring-boot-chart
 Outputs:
-  Instruction:
-    Description:
-      zh-cn: 使用说明
-      en: Instruction
-    Value:
-      Fn::Sub:
-        - |
-          ${OutputData}
-        - OutputData:
-            Fn::GetAtt:
-              - FluxHelmApplicationModule
-              - HelmOutput
   UpdateDesc:
     Description:
       zh-cn: 更新说明

@@ -8,7 +8,7 @@ HelmChartPath: Chart
 RuntimeType: Kubernetes
 ServiceType: private
 ArtifactSourceType: HelmChart
-ServiceBuildRegion: ap-southeast-1
+ServiceBuildRegion: cn-hangzhou
 RepoName: CheYuX/spring-boot-chart-test
 RegionId: cn-hangzhou
 CustomParameters:
@@ -19,7 +19,7 @@ CustomParameters:
   ConstraintDescription: ''
   Default: '1'
   Name: ReplicaCount
-OutputType: HelmNotes
+OutputType: SetAfterCreated
 Owner: CheYuX
 Branch: main
 Platform: github
